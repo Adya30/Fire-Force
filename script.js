@@ -1,3 +1,12 @@
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        }
+    });
+});
+
 fetch("https://api.jikan.moe/v4/anime/38671/episodes")
     .then(res => res.json())
     .then(data => {
