@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/logo-latom.png" type="image/x-icon">
+    <title>Fire Force</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow-sm py-0 px-0 fixed-top">
+            <div class="container-fluid">
+                <a href="#"><img src="asset/logo-latom.png" alt="Logo" width="80"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center gap-4 py-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-7 px-3 py-2 rounded fw-semibold" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-7 px-3 py-2 rounded fw-semibold" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-7 px-3 py-2 rounded fw-semibold"
+                                href="#episode">Episode</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-7 px-3 py-2 rounded fw-semibold" href="#anime">Anime</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-light min-vh-100 d-flex align-items-center" style="padding-top: 60px;" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center pt-5">
+                    <img src="asset/cover.jpg" alt="Hero Image" class="img-fluid rounded shadow"
+                        style="max-width: 350px;">
+                </div>
+
+                <div class="col-lg-6 mb-4 mb-lg-0 pt-5">
+                    <h1 class="fw-bold mb-2 fs-7 fs-md-6">Fire Force 🔥
+                        <hr class="border border-2 border-danger rounded" width="200px">
+                    </h1>
+                    <p class="text-muted fs-5 mb-4 fs-6 fs-md-5" style="text-align: justify;">Fire Force (Enen no
+                        Shouboutai) adalah anime aksi supernatural yang berlatar dunia di mana manusia dapat terbakar
+                        secara spontan dan berubah menjadi makhluk api bernama Infernal. Untuk menghadapi ancaman ini,
+                        dibentuklah Pasukan Pemadam Khusus Fire Force yang bertugas melindungi umat manusia dan
+                        mengungkap misteri di balik fenomena tersebut.</p>
+                    <a href="#about" class="btn btn-danger btn-lg px-4 fs-6 fs-md-5">Episode</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white min-vh-100 d-flex align-items-center" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-lg-0 pt-5">
+                    <h1 class="fw-bold mb-1 fs-7 fs-md-6">About<span class="text-danger">.</span>
+                        <hr class="border border-2 border-danger rounded" width="170px">
+                    </h1>
+                    <p class="text-muted fs-5 mb-4 fs-6 fs-md-5" style="text-align: justify;">Fire Force hadir dalam dua
+                        season yang masing-masing terdiri dari 24 episode, sehingga total mencapai 48 episode. Setiap
+                        episodenya memperlihatkan perkembangan karakter, konflik yang semakin kompleks, serta
+                        pengungkapan misteri besar di balik fenomena Spontaneous Human Combustion.</p>
+                </div>
+
+                <div class="col-lg-6 text-center pt-5">
+                    <img src="asset/hero.jpg" alt="" width="300px" class="img-fluid shadow shadow-danger rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light min-vh-100 d-flex align-items-center pt-5" id="episode">
+        <div class="container pt-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold mb-1 fs-7 fs-md-6">Episode<span class="text-danger">.</span></h1>
+                    <hr class="border border-2 border-danger rounded mx-auto" style="width:170px">
+                </div>
+            </div>
+            <div class="row" id="episodeList"></div>
+        </div>
+    </section>
+
+    <section class="bg-white min-vh-100 d-flex align-items-center pt-5" id="anime">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+
+                    <div class="border rounded-4 p-4 text-center shadow-sm">
+                        <img src="asset/samehadaku.png" alt="Samehadaku" width="200" class="img-fluid mb-3">
+
+                        <p class="text-muted fs-6 fs-md-5">Samehadaku adalah salah satu situs streaming dan unduhan anime yang cukup populer dikalangan penggemar anime di Indonesia. Situs ini dikenal karena menyediakan berbagai judul anime baik yang sedang tayang (ongoing) maupun yang sudah tamat dengan subtitle Bahasa Indonesia.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-center bg-danger text-white px-3 py-3 mb-0">Made with ❤ by <a href="https://github.com/Adya30" class="text-white" style="text-decoration: none;">@Adya30</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
